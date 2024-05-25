@@ -1,0 +1,24 @@
+body {
+  background-color: #000;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 1 auto;
+  max-width: 767px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #353535;
+}

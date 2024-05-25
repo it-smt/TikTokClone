@@ -1,0 +1,10 @@
+.footer {
+  position: relative;
+  &__logo {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1d1d1d;
+  }
+}

@@ -1,0 +1,71 @@
+.repost {
+  transform: translateY(100%);
+  transition: all 0.3s ease 0s;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  padding: 20px 20px 50px 20px;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  &__first-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px 0;
+  }
+
+  &__title {
+    font-size: 30px;
+  }
+
+  &__close {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  &__second-block {
+  }
+
+  &__items {
+    overflow: auto;
+    display: flex;
+    padding: 5px;
+  }
+
+  &__items::-webkit-scrollbar {
+    height: 1px;
+  }
+  &__items::-webkit-scrollbar-track {
+    background: transparent; /* цвет дорожки */
+  }
+  &__items::-webkit-scrollbar-thumb {
+    background-color: #575757; /* цвет плашки */
+    border-radius: 0px; /* закругления плашки */
+    border: 0px solid transparent; /* padding вокруг плашки */
+  }
+
+  &__items li {
+    margin: 0 20px 0 0;
+  }
+  &__items li:last-child {
+    margin: 0;
+  }
+
+  &__link {
+  }
+
+  &__link img {
+    max-width: 60px;
+    max-height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.repost._active {
+  transform: translateY(0);
+}
